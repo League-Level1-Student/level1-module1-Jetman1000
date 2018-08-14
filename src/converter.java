@@ -11,9 +11,9 @@ import javax.swing.JTextField;
 public class converter implements ActionListener {
 	//objects here---->
 	JFrame window=new JFrame();
-	JButton button= new JButton("convert");
+	JButton button= new JButton("convert to celcius");
 	JPanel panel= new JPanel();
-	JTextField text = new JTextField("     ");
+	JTextField text = new JTextField(5);
 	JLabel label = new JLabel();
 	
 	
@@ -51,7 +51,7 @@ public void actionPerformed(ActionEvent arg0) {
 	
 	String answer= text.getText();
 	int answer2= Integer.parseInt(answer); 
-	double celi=((5.0/9.0)*answer2)-32;
+	double celi=(5.0/9.0)*(answer2-32);
 JOptionPane.showMessageDialog(null, celi);		
 	}
 }

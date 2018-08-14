@@ -44,6 +44,10 @@ public class Cat {
 		else
 			System.out.println("DEAD CAT :(");
 	}
+	
+	public static void main(String[] args) {
+		Cat cat=new Cat();	
+	}
 
 
 }
