@@ -12,7 +12,13 @@
 
 
 public class HarryPotter {
-
+public static void main(String[] args) {
+	HarryPotter HarryRunner=new HarryPotter();
+	HarryRunner.makeInvisible(true);
+	HarryRunner.spyOnSnape();
+	HarryRunner.makeInvisible(true);
+	HarryRunner.castSpell("spell");
+}
 	private boolean cloakOn;
 	
 	HarryPotter() {
