@@ -12,7 +12,22 @@
  */
 
 public class Smurf {
-
+public static void main(String[] args) {
+	Smurf HandySmurf=new Smurf("Handy");
+	HandySmurf.eat();
+	String h=HandySmurf.getName();
+	System.out.println(h);
+	Smurf PapaSmurf=new Smurf("Papa");
+	String p=PapaSmurf.getName();
+	System.out.println(p);
+	PapaSmurf.getHatColor();
+	PapaSmurf.isGirlOrBoy();
+	Smurf Smurfette=new Smurf("Smurfette");
+	String s=Smurfette.getName();
+	System.out.println(s);
+	Smurfette.getHatColor();
+	Smurfette.isGirlOrBoy();
+}
 	private String name;
 
 	Smurf(String name) {
@@ -29,13 +44,21 @@ public class Smurf {
 
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
-		// 3. Fill in this method
+		if(name=="Papa") {
+		System.out.println("my hat is red.");
+		}else {
+			System.out.println("my hat is white.");
+		}
 		return "";
 	}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
-		// 4. Fill in this method
+		if(name=="Smurfette") {
+			System.out.println("I am a girl.");
+		}else {
+			System.out.println("I am a boy.");
+		}
 		return "";
 	}
 
